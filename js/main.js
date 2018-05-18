@@ -48,7 +48,7 @@ function getCoordinates(position){
     var wr = new WeatherRequester("https://api.openweathermap.org/data/2.5/forecast",
                                     position.coords.latitude,
                                     position.coords.longitude,
-                                    "imperial",
+                                    "metric",
                                     "ae8b41a14cc901f66facc96e63d0c792"
                                     );
     console.log("position "+position);
