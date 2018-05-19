@@ -19,51 +19,52 @@
 
     <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/weather-icons.min.css">
+
+    <!--https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.ttf-->
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
 <body>
-
 <div class="container-fluid d-flex justify-content-center align-items-baseline" style="height: 100%; width:100%; ">
-    <div class="d-flex flex-column justify-content-center" style="width:19%;">
+    <div class="d-flex flex-column justify-content-center" style="width:20%;">
                     <div class="row" style="height:20vh"></div>
             <div class="row">
-                <div class="col-10 v-border">
-                    <h2 class="text-center">Local Weather:</h2>
+                <div class="col-10">
+                    <h2 class="text-center"><b>Local Weather:</b></h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-10 v-border text-center">
-
-                    <h3 >Khakrov,UA</h3>
-
+                <div  class="col-10 text-center ">
+                    <h3 id="location"></h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-2 v-border">
+            <div class="row mt-5">
+                <div class="col-2 ">
                 </div>
-                 <div class="col-6 v-border">
-                    <img src="http://drive.google.com/uc?export=view&id=18RKgl04uUTxCIUvv5b5wSGmFKPkkVDYY" class="img-fluid v-border myclass" alt="The Pulpit Rock">
+                 <div class="col-6" style="height:120px;">
+                    <!--img src="http://drive.google.com/uc?export=view&id=18RKgl04uUTxCIUvv5b5wSGmFKPkkVDYY" class="img-fluid v-border myclass" alt="The Pulpit Rock"-->
+                     <i id="wIcon" class="wi icon-wrap weather-icon"></i>
                 </div>
-                <div class="col-2 v-border">
+                <div class="col-2">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-10 v-border">
-                    <h4 class="v-border text-center">Thunderstorm</h4>
+            <div class="row mt-3">
+                <div class="col-10">
+                    <h4 id="descr" class="text-center"></h4>
                 </div>
              </div>
-            <div class="row">
-            <div class="col-5 v-border">
-                 <div class="text-center display-3 mt-2" >-23</div>
+            <div class="row ">
+            <div class="col-6 ">
+                 <div id="temp" class="text-center font-weight-bold display-4  mt-2" ></div>
 
             </div>
-            <div class="col-5 v-border">
-                <img src="http://drive.google.com/uc?export=view&id=1AysiMHt348QBk-HzOfSJYVdFcL-0PT-1" class="img-fluid v-border" alt="The Pulpit Rock">
+            <div class="col-4">
+                <!--img src="http://drive.google.com/uc?export=view&id=1AysiMHt348QBk-HzOfSJYVdFcL-0PT-1" class="myclass v-border" alt="The Pulpit Rock"-->
+
+                <i id="unit" onclick="changeMeasurement()" class="wi weather-icon wi-celsius"></i>
             </div>
-            </div>
-            <div class="row">
-                <button onclick="test()">test</button>
             </div>
     </div>
 

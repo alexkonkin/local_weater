@@ -19,5 +19,13 @@ html,body{
     max-height: 100%;
  }
 
+.weather-icon {
+    font-size:100px;
+
+}
+
+#descr:first-letter {
+    text-transform: uppercase;
+}
 
 
