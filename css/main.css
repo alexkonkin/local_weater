@@ -28,4 +28,10 @@ html,body{
     text-transform: uppercase;
 }
 
+#unit{
+    color: #036cdb;
+}
 
+#unit:hover{
+    color: #2f4f90;
+}

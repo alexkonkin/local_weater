@@ -40,12 +40,11 @@ WeatherRequester.prototype.requestWeather = function(){
                     icon_name += "day"+"-"+self.position.list[0].weather[0].id;
                     break;
                 case "n":
-                    icon_name = "night"+"-"+self.position.list[0].weather[0].id;
+                    icon_name += "night"+"-"+self.position.list[0].weather[0].id;
                     break;
             }
 
             $("#wIcon").addClass(icon_name);
-
         }
     });
 }
@@ -61,15 +60,7 @@ function getCoordinates(position){
                                     "metric",
                                     "ae8b41a14cc901f66facc96e63d0c792"
                                     );
-    console.log("position "+position);
-
     wr.requestWeather();
-    /*
-    $.when(wr.requestWeather()).done(function() {
-        console.log(wr.getResult());
-    });
-    */
-
 }
 
 function errorCoordinates(){
@@ -88,8 +79,7 @@ function changeMeasurement(){
 
 function getLocation(){
     if (navigator.geolocation) {
-        //navigator.geolocation.getCurrentPosition()
-        navigator.geolocation.getCurrentPosition(getCoordinates, errorCoordinates, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
+         navigator.geolocation.getCurrentPosition(getCoordinates, errorCoordinates, {maximumAge:60000, timeout:5000, enableHighAccuracy:true});
     } else {
         console.log("Geolocation is not supported by this browser.");
     }
