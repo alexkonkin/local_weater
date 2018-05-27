@@ -31,37 +31,32 @@
     <div class="d-flex flex-column justify-content-center" style="width:20%;">
                     <div class="row" style="height:20vh"></div>
             <div class="row">
-                <div class="col-10">
+                <div class="col-12">
                     <h2 class="text-center"><b>Local Weather:</b></h2>
                 </div>
             </div>
             <div class="row">
-                <div  class="col-10 text-center ">
+                <div  class="col-12 text-center ">
                     <h3 id="location"></h3>
                 </div>
             </div>
-            <div class="row mt-5">
-                <div class="col-2 ">
-                </div>
-                 <div class="col-6" style="height:120px;">
-                     <i id="wIcon" class="wi icon-wrap weather-icon"></i>
-                </div>
-                <div class="col-2">
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <i id="wIcon" class="wi icon-wrap weather-icon"></i>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-10">
+                 <div class="row mt-3">
+                <div class="col-12">
                     <h4 id="descr" class="text-center"></h4>
                 </div>
              </div>
             <div class="row ">
-            <div class="col-6 ">
-                 <div id="temp" class="text-center font-weight-bold display-4  mt-2" ></div>
-
-            </div>
-            <div class="col-4">
-                <i id="unit" onclick="changeMeasurement()" class="wi weather-icon wi-celsius"></i>
-            </div>
+                <div class="col-7">
+                     <div id="temp" class="text-right font-weight-bold display-4  mt-2" ></div>
+                </div>
+                <div class="col-5">
+                    <i id="unit" onclick="changeMeasurement()" class="wi weather-icon wi-celsius "></i>
+                </div>
             </div>
     </div>
 
